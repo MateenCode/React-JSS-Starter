@@ -1,0 +1,115 @@
+@import "~main.scss";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: $defaultColor;
+    font-size: 1rem;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    background: url(http://23.250.125.234/~juantest/ServeNewWebsite/img/clouds1.png);
+    background-color: $backgroundColor;
+    background-size: cover;
+    min-height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  height: 100%;
+  > div {
+    > div {
+      min-height: 100%;
+      height: 100%;
+    }
+  }
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid $borderColor;
+}
+
+.info-title {
+  margin-bottom: 1.5rem;
+  color: $buttonColor;
+  font-size: 1.8rem;
+}
+
+.text-label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.flexible {
+  display: flex;
+  &.horizontal {
+    flex-direction: row;
+  }
+  &.horizontal-reverse {
+    flex-direction: row-reverse;
+  }
+  &.vertical {
+    flex-direction: column;
+  }
+  &.vertical-reverse {
+    flex-direction: column-reverse;
+  }
+  &.jStart {
+    justify-content: flex-start;
+  }
+  &.jEnd {
+    justify-content: flex-end;
+  }
+  &.jCenter {
+    justify-content: center;
+  }
+  &.jAround {
+    justify-content: space-around;
+  }
+  &.jBetween {
+    justify-content: space-between;
+  }
+  &.aStart {
+    align-items: flex-start;
+  }
+  &.aEnd {
+    align-items: flex-end;
+  }
+  &.aCenter {
+    align-items: center;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.noWrap {
+    flex-wrap: nowrap;
+  }
+  &.grow {
+    flex-grow: 1;
+  }
+  &.noGrow {
+    flex-grow: 0;
+  }
+  &.shrink {
+    flex-shrink: 1;
+  }
+  &.noShrink {
+    flex-shrink: 0;
+  }
+  &.fBasis {
+    flex-basis: 100%;
+  }
+  &.fBasis50{
+    flex-basis: 50%;
+  }
+}
